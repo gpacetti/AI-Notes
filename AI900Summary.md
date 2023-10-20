@@ -1,5 +1,91 @@
 
 
+Cognitive Services vs Azure AI
+----------
+
+As of July 2023, Azure AI services encompass all of what were previously known as Cognitive Services and Azure Applied AI Services. There are no changes to pricing 
+-The names Cognitive Services and Azure Applied AI continue to be used in Azure billing, cost analysis, price list, and price APIs. 
+-Computer vision is one of the core areas of artificial intelligence (AI), and focuses on creating solutions that enable AI applications to "see" the world and make sense of it.
+
+Azure AI 
+----------
+AI is the creation of software that imitates human behaviors and capabilities. Key workloads include:
+
+**Machine learning** - This is often the foundation for an AI system, and is the way we "teach" a computer model to make predictions and draw conclusions from data.
+
+**Anomaly detection** - The capability to automatically detect errors or unusual activity in a system.
+
+**Computer vision** - The capability of software to interpret the world visually through cameras, video, and images.
+
+**Natural language processing** - The capability for a computer to interpret written or spoken language, and respond in kind.
+
+**Knowledge mining** - The capability to extract information from large volumes of often unstructured data to create a searchable knowledge store.
+
+Azure AI is composed of:
+
+Search
+
+**Azure Cognitive Search**
+
+Vision
+
+**Azure AI Vision**. Identify and analyze content within images and videos.
+
+**Azure AI Custom Vision**. Customize image recognition to fit your business needs.
+
+Speech
+
+**Speech to text**. Transcribe audible speech into readable, searchable text.
+
+**Text to speech**. Convert text to lifelike speech for more natural interfaces.
+
+**Speech translation**. Integrate real-time speech translation into your apps.
+
+**Speaker recognition**. Identify and verify the people speaking based on audio.
+
+Language
+
+**Entity recognition**. Identify commonly used and domain-specific terms, including PII extraction.
+**Sentiment analysis**. Automatically detect sentiments and opinions from social media, customer reviews and more.
+**Conversational language understanding**. Enable your apps to interact with users through natural language.
+
+**Summarization**. Generate summaries of documents and conversation transcripts.
+Text analytics for health. Process unstructured medical data to improve patient care.
+**Question answering**. Use AI to distill information into easy-to-navigate questions and answers. Supported across more than 100 languages.
+
+Translator
+
+**Text translation**. Translate source text into multiple target languages in real time.
+
+**Document translation**. Translate complex documents while preserving the structures and formats from the original documents.
+
+**Custom translator**. Build customized models to translate domain-specific content and terminology in your style.
+
+**Document Intelligence** turns documents into usable data at a fraction of the time and cost.
+
+Bot
+
+**Bot Service** creates bots and connect them across channels
+
+Audio and Video 
+**Video Indexer** analyzes audio and video files
+
+Decision
+
+**Azure AI Anomaly Detector**. Identify potential problems early on.
+**Azure AI Content Safety and Azure Content Moderator**. Detect potentially offensive or unwanted content.
+**Azure AI Personalizer**. Create rich, personalized experiences for every user.
+
+Metric Advisor
+**Azure AI Metrics Advisor** proactvely monitor metrics and diagnose issues with 
+
+Immersive Reader
+
+**Azure AI Immersive Reader** Embed text reading and comprehension capabilities 
+
+Clustering 
+---------------
+
 Clustering is a form of machine learning that is used to group similar items into clusters based on their features. For example, a researcher might take measurements of penguins, and group them based on similarities in their proportions.
 
 Graphic of penguins clustered into groups.
@@ -18,47 +104,38 @@ Repeating steps 3 and 4 until the cluster allocations stabilize or the specified
 
 https://microsoftlearning.github.io/AI-900-AIFundamentals/instructions/02c-create-clustering-model.html
 
-Note You can think of data observations, like the penguin measurements, as being multidimensional vectors. The K-Means algorithm works by:
+Note: You can think of data observations, like the penguin measurements, as being multidimensional vectors. 
 
-initializing K coordinates as randomly selected points called centroids in n-dimensional space (where n is the number of dimensions in the feature vectors).
-Plotting the feature vectors as points in the same space, and assigning each point to its closest centroid.
-Moving the centroids to the middle of the points allocated to it (based on the mean distance).
-Reassigning the points to their closest centroid after the move.
-Repeating steps c. and d. until the cluster allocations stabilize or the specified number of iterations has completed.
---------------------------------------
 
-As of July 2023, Azure AI services encompass all of what were previously known as Cognitive Services and Azure Applied AI Services 1. There are no changes to pricing 1. The names Cognitive Services and Azure Applied AI continue to be used in Azure billing, cost analysis, price list, and price APIs 1.
-Computer vision is one of the core areas of artificial intelligence (AI), and focuses on creating solutions that enable AI applications to "see" the world and make sense of it.
-
-Of course, computers don't have biological eyes that work the way ours do, but they are capable of processing images; either from a live camera feed or from digital photographs or videos. This ability to process images is the key to creating software that can emulate human visual perception.
-
+Computer Vision
+---------------------------------
 Some potential uses for computer vision include:
 
-Content Organization: Identify people or objects in photos and organize them based on that identification. Photo recognition applications like this are commonly used in photo storage and social media applications.
-Text Extraction: Analyze images and PDF documents that contain text and extract the text into a structured format.
-Spatial Analysis: Identify people or objects, such as cars, in a space and map their movement within that space.
+**Content Organization**: Identify people or objects in photos and organize them based on that identification. Photo recognition applications like this are commonly used in photo storage and social media applications.
+**Text Extraction**: Analyze images and PDF documents that contain text and extract the text into a structured format.
+**Spatial Analysis**: Identify people or objects, such as cars, in a space and map their movement within that space.
 To an AI application, an image is just an array of pixel values. These numeric values can be used as features to train machine learning models that make predictions about the image and its contents.
 
 Microsoft's Azure AI Vision service provides pre-built computer vision capabilities. The service can analyze images, and return detailed information about an image and the objects it depicts.
 
 To use Azure AI Vision, you need to create a resource for it in your Azure subscription. You can use either of the following resource types:
 
-Computer Vision: A specific resource for the Computer Vision service. Use this resource type if you don't intend to use any other Azure AI Services, or if you want to track utilization and costs for your Computer Vision resource separately.
-Azure AI services: A general resource that includes Computer Vision along with many other Azure AI services; such as Azure AI Language, Azure AI Custom Vision, Azure AI Translator, and others. Use this resource type if you plan to use multiple AI services and want to simplify administration and development.
+**Computer Vision**: A specific resource for the Computer Vision service. Use this resource type if you don't intend to use any other Azure AI Services, or if you want to track utilization and costs for your Computer Vision resource separately.
+**Azure AI services**: A general resource that includes Computer Vision along with many other Azure AI services; such as Azure AI Language, Azure AI Custom Vision, Azure AI Translator, and others. Use this resource type if you plan to use multiple AI services and want to simplify administration and development.
 
-Tagging visual features
+**Tagging visual features**
 The image descriptions generated by Azure AI Vision are based on a set of thousands of recognizable objects, which can be used to suggest tags for the image. These tags can be associated with the image as metadata that summarizes attributes of the image; and can be particularly useful if you want to index an image along with a set of key terms that might be used to search for images with specific attributes or contents.
 
-Detecting objects
+**Detecting objects**
 The object detection capability is similar to tagging, in that the service can identify common objects; but rather than tagging, or providing tags for the recognized objects only, this service can also return what is known as bounding box coordinates. Not only will you get the type of object, but you will also receive a set of coordinates that indicate the top, left, width, and height of the object detected, which you can use to identify the location of the object in the image.
 
-Detecting brands
+**Detecting brands**
 This feature provides the ability to identify commercial brands. Azure AI Vision has an existing database of thousands of globally recognized logos from commercial brands of products.
 
-Detecting faces
+**Detecting faces**
 Azure AI Vision can detect and analyze human faces in an image, including the ability to determine age and a bounding box rectangle for the location of the face(s). The facial analysis capabilities of Azure AI Vision service are a subset of those provided by the dedicated Azure AI Face service.
 
-Categorizing an image
+**Categorizing an image**
 Azure AI Vision can categorize images based on their contents. The service uses a parent/child hierarchy with a "current" limited set of categories. When analyzing an image, detected objects are compared to the existing categories to determine the best way to provide the categorization. As an example, one of the parent categories is people_. This image of a person on a roof is assigned a category of people_.
 
 Detecting domain-specific content -
@@ -88,7 +165,7 @@ https://portal.vision.cognitive.azure.com/gallery/featured
 
 Image classification is a common workload in artificial intelligence (AI) applications. It harnesses the predictive power of machine learning to enable AI systems to identify real-world items based on images.
 
-Most modern image classification solutions are based on deep learning techniques that make use of convolutional neural networks (CNNs) to uncover patterns in the pixels that correspond to particular classes. Training an effective CNN is a complex task that requires considerable expertise in data science and machine learning.
+Most modern image classification solutions are based on **deep learning** techniques that make use of convolutional neural networks (CNNs) to uncover patterns in the pixels that correspond to particular classes. Training an effective CNN is a complex task that requires considerable expertise in data science and machine learning.
 
 Common techniques used to train image classification models have been encapsulated into the Azure AI Custom Vision service in Microsoft Azure; making it easy to train a model and publish it as a software service with minimal knowledge of deep learning techniques. You can use the Azure AI Custom Vision to train image classification models and deploy them as services for applications to use.
 
@@ -98,7 +175,7 @@ Common techniques used to train image classification models have been encapsulat
 Moving beyond simple face detection, some algorithms can also return other information, such as facial landmarks (nose, eyes, eyebrows, lips, and others).
 These facial landmarks can be used as features with which to train a machine learning model.
 
-A further application of facial analysis is to train a machine learning model to identify known individuals from their facial features. This usage is more generally known as **facial recognition**, and involves using multiple images of each person you want to recognize to train a model so that it can detect those individuals in new images on which it wasn't trained.
+A further application of facial analysis is to train a machine learning model to identify known individuals from their facial features. This usage is more generally known as **Facial recognition**, and involves using multiple images of each person you want to recognize to train a model so that it can detect those individuals in new images on which it wasn't trained.
 
 Microsoft Azure provides multiple Azure AI services that you can use to detect and analyze faces, including:
 
@@ -116,6 +193,9 @@ The **Read API** can handle scanned documents that have a lot of text. It also h
 Azure AI Document Intelligence supports automated document processing through:
 **Prebuilt models** that are trained to recognize and extract data for common scenarios such as IDs, receipts, and invoices.
 **Custom models**, which enable you to extract what are known as key/value pairs and table data from forms. Custom models are trained using your own data, which helps to tailor this model to your specific forms. Starting with a few samples of your forms, you can train the custom model. After the first training exercise, you can evaluate the results and consider if you need to add more samples and re-train.
+
+Azure AI Language
+------------------
 
 **Azure AI Language** service can help simplify application development by using pre-trained models that can:
 
@@ -140,7 +220,27 @@ Azure AI Language uses a prebuilt machine learning classification model to evalu
 Key phrase extraction is the concept of evaluating the text of a document, or documents, and then identifying the main talking points of the document(s). 
 
 Entity recognition provides Azure AI Language with unstructured text and it will return a list of entities in the text that it recognizes.
--------------------------------------------------------------------------------------------
+
+
+**Document processing models**
+
+Azure AI Document Intelligence supports a wide variety of models that enable you to add intelligent document processing to your apps and flows. You can use a prebuilt document analysis or domain specific model or train a custom model tailored to your specific business needs and use cases.
+Prebuilt models	
+Health insurance card	Automate healthcare processes by extracting insurer, member, prescription, group number and other key information from US health insurance cards.
+US Tax document models	Process US tax forms to extract employee, employer, wage, and other information.
+Contract	Extract agreement and party details.
+Invoice	Automate invoices.
+Receipt	Extract receipt data from receipts.
+Identity document (ID)	Extract identity (ID) fields from US driver licenses and international passports.
+Business card	Scan business cards to extract key fields and data into your applications.
+Custom model
+Custom model (overview)	Extract data from forms and documents specific to your business. Custom models are trained for your distinct data and use cases.
+Custom extraction models	● Custom template models use layout cues to extract values from documents and are suitable to extract fields from highly structured documents with defined visual templates.
+Custom neural models are trained on various document types to extract fields from structured, semi-structured and unstructured documents.
+Custom classification model	The Custom classification model can classify each page in an input file to identify the document(s) within and can also identify multiple documents or multiple instances of a single document within an input file.
+Composed models	Combine several custom models into a single model to automate processing of diverse document types with a single composed model.
+
+
 AI system must support two capabilities:
 
 Speech recognition - the ability to detect and interpret spoken input.
@@ -169,7 +269,8 @@ Azure AI Translator uses a Neural Machine Translation (NMT) model for translatio
 Azure AI Translator supports text-to-text translation between more than 60 languages. When using the service, you must specify the language you are translating from and the language you are translating to using ISO 639-1 language codes, such as en for English, fr for French, and zh for Chinese. Alternatively, you can specify cultural variants of languages by extending the language code with the appropriate 3166-1 cultural code - for example, en-US for US English, en-GB for British English, or fr-CA for Canadian French.
 
 Speech translation is used to translate between spoken languages, sometimes directly (speech-to-speech translation) and sometimes by translating to an intermediary text format (speech-to-text translation).
----------------------------------------------------------------------------------------------------
+
+
 **Azure AI Language** service works with conversational language understanding, you need to take into account three core concepts: utterances, entities, and intents (ie. Turing test).
 
 **Utterance** is an example of something a user might say, and which your application must interpret. For example, when using a home automation system, a user might use the following utterances:
@@ -187,3 +288,44 @@ Speech translation is used to translate between spoken languages, sometimes dire
 **Intent** represents the purpose, or goal, expressed in a user's utterance. For example, for both of the previously considered utterances, the intent is to turn a device on; so in your conversational language understanding application, you might define a TurnOn intent that is related to these utterances.
 
  Of special interest is the None intent. You should consider always using the None intent to help handle utterances that do not map any of the utterances you have entered. The None intent is considered a fallback, and is typically used to provide a generic response to users when their requests don't match any other intent.
+
+ Creating an application with conversational language understanding consists of two main tasks. First you must define entities, intents, and utterances with which to train the language model - referred to as **authoring the model**. Then you must publish the model so that client applications can use it for intent and entity prediction based on user input.
+
+ Conversational language understanding provides a comprehensive collection of **prebuilt domains** that include pre-defined intents and entities for common scenarios; which you can use as a starting point for your model. You can also create your own entities and intents.
+
+ Define intents based on actions a user would want to perform with your application. For each intent, you should include a variety of utterances that provide examples of how a user might express the intent.
+
+ There are four types of entities:
+
+Machine-Learned: Entities that are learned by your model during training from context in the sample utterances you provide.
+List: Entities that are defined as a hierarchy of lists and sublists. For example, a device list might include sublists for light and fan. For each list entry, you can specify synonyms, such as lamp for light.
+RegEx: Entities that are defined as a regular expression that describes a pattern - for example, you might define a pattern like [0-9]{3}-[0-9]{3}-[0-9]{4} for telephone numbers of the form 555-123-4567.
+Pattern.any: Entities that are used with patterns to define complex entities that may be hard to extract from sample utterances.
+
+After you have defined the intents and entities in your model, and included a suitable set of sample utterances; the next step is to train the model. Training is the process of using your sample utterances to teach your model to match natural language expressions that a user might say to probable intents and entities.
+
+Azure Bot
+---------------------------------------------------------------
+Bot solution solution requires:
+
+A knowledge base of question and answer pairs - usually with some built-in natural language processing model to enable questions that can be phrased in multiple ways to be understood with the same semantic meaning.
+A bot service that provides an interface to the knowledge base through one or more channels.
+
+You can easily create a user support bot solution on Microsoft Azure using a combination of two core services:
+
+**Azure AI Language** includes a custom question answering feature that enables you to create a knowledge base of question and answer pairs that can be queried using natural language input.
+ Note
+
+The question answering capability in Azure AI Language is a newer version of the QnA Maker service - which is still available as a separate service.
+
+**Azure AI Bot Service** provides a framework for developing, publishing, and managing bots on Azure.
+
+Azure AI Content Safety 
+-----------
+Azure AI Content Safety is a comprehensive solution designed to detect harmful user-generated and AI-generated content in applications and services. Azure AI Content Safety is suitable for many scenarios such as online marketplaces, gaming companies, social messaging platforms, enterprise media companies, and K-12 education solution providers. Here's an overview of its features and capabilities:
+
+**Text and Image Detection APIs**: Scan text and images for sexual content, violence, hate, and self-harm with multiple severity levels.
+
+**Content Safety Studio**: An online tool designed to handle potentially offensive, risky, or undesirable content using our latest content moderation ML models. It provides templates and customized workflows that enable users to build their own content moderation systems.
+
+**Language support**: Azure AI Content Safety supports more than 100 languages and is specifically trained on English, German, Japanese, Spanish, French, Italian, Portuguese, and Chinese.
